@@ -6,10 +6,10 @@
 ### Contact information:
 #### Phone: +375 29 7156115
 #### E-mail: staskevichalena@gmail.com
-#### Github: LenaStask
+#### Github: [LenaStask](https://github.com/LenaStask)
 ***
 ### About me
-
+I know how to set goal and achieve it. I like to study and I do it. I’m not afraid to change my life. Now my goal is to become a Frontend developer. And I am moving in this direction.
 
 
 ***
@@ -17,7 +17,7 @@
 * #### Javascript Basics
 * #### HTML
 * #### CSS
-* #### Git
+* #### Git/Github
 ***
 ### Code example
 ```
@@ -32,9 +32,9 @@ function arrayPlusArray(arr1, arr2) {
 ```
 ***
 ### Education
-#### BELARUSIAN STATE UNIVERSITY, FACULTY OF APPLIED MATHEMATICS AND COMPUTER SCIENCE
+#### BELARUSIAN STATE UNIVERSITY, Applied Mathematics
 ***
 ### Languages
-* #### English A2
+* #### English B1
 * #### Russian native 
 * #### Belarussian native 
