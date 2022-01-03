@@ -1,55 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>cv</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico">
 </head>
 <body>
-    <h1>Alena Staskevich</h1>
-    <hr>
-    <p>Junior Frontend Developer</p>
+  <div class="container">
+    <div class="content">
+    <aside class="aside">
+      <header>
+        <img src="./assets/img/photo.png" alt="photo" width="200" height="200">
+        <h1>Alena Staskevich</h1>
+        <h2>Junior Frontend Developer</h2>
+      </header>
 
-    <h2>Contact information:</h2>
-    <p>Phone: +375 29 7156115</p>
-    <p>Email: <a href="mailto:staskevichalena@gmail.com">staskevichalena@gmail.com</a></p>
-    <p>Github: <a href="https://github.com/LenaStask">LenaStask</a></p>
+      <div class="summary">
+        <section class="contact">
+          <h2>Contact me</h2>
+          <ul>
+            <li><img src="./assets/svg/phone.svg" alt="phone"> +375 29 7156115</li>
+            <li><img src="./assets/svg/email.svg" alt="email"><a href="mailto:staskevichalena@gmail.com">staskevichalena@gmail.com</a></li>
+            <li><img src="./assets/svg/telegram.svg" alt="telegram"> <a href="#">@LenaStask</a></li>
+            <li><img src="./assets/svg/linkedin.svg" alt="LinkedIn"><a href="#">LinkedIn</a></li>
+          </ul>
+        </section>
 
-    <h2>About me</h2>
-    <p>I know how to set goal and achieve it. I like to study and I do it. I’m not afraid to change my life. Now my goal is to become a Frontend developer. And I am moving in this direction.</p>
+        <section class="skills">
+          <h2>Skills</h2>
+          <ul>
+              <li>Javascript Basics</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Git/Github</li>
+              <li>VS Code</li>
+          </ul>
+        </section>
+        
+        <section class="languages">
+          <h2>Languages</h2>
+          <ul>
+              <li><span>English</span> B1</li>
+              <li><span>Russian</span> native</li>
+              <li><span>Belarussian</span> native</li>
+          </ul>
+        </section>
+      </div>
+    </aside>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>Javascript Basics</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Git/Github</li>
-    </ul>
+    <main class="main">
+      <section class="about">
+        <header>
+          <img src="assets/svg/myself.svg" alt="about me">
+          <h2>About me</h2>  
+        </header>
+        <p>
+        My name is Lena Staskevich, I’m originally from Belarus.
+        I’m great at time management, responsible and hardworking individual. I can do multiply task every day. 
+        I know how to set goals and achieve them. I like to study and eager to learn new skills. I’m not afraid to change my life. Now my goal is to be a Frontend developer.  And I am motivated to move to this goal every day to get a job of my dream.
+        </p>
+      </section>
 
-    <h2>Code example</h2>
-    <pre>
-        <code>
-      function arrayPlusArray(arr1, arr2) {
-        let arr3=[...arr1,...arr2];
-             let sum=0;
-             for(let i=0; i&lt;arr3.length; i++){
-               sum+=arr3[i];
-             }
-             return sum;
-      }
-    </code>
-    </pre>
+      <section class="education">
+        <header>
+          <img src="./assets/svg/education.svg" alt="education">
+          <h2>Education</h2>
+        </header>
+        <h3>BELARUSIAN STATE UNIVERSITY</h3>
+        <p>Faculty of Applied Mathematics and Computer Science</p>
+        <p>Qualification “Mathematician-Programmer”</p>
+      </section>
 
-    <h2>Education</h2>
-    <p>BELARUSIAN STATE UNIVERSITY, Applied Mathematics</p>
+      <section class="section-code">
+        <header>
+          <img src="./assets/svg/code.svg" alt="code">
+          <h2>Code example</h2>
+        </header>
+        <p>
+          Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+        </p>
+        <pre>
+          <code class="code">
+function countSheeps(arrayOfSheep) {
+  let count = 0;
+  for (let i=0; i&lt;arrayOfSheep.length; i++) {
+    if (arrayOfSheep[i]) {
+      count++;
+    }
+  }
+  return count;
+}
+          </code>
+        </pre>
+      </section>
+    </main>
+  </div>
 
-    <h2>Languages</h2>
-    <ul>
-        <li>English B1</li>
-        <li>Russian native</li>
-        <li>Belarussian native</li>
-    </ul>
+    <footer class="footer">
+      <a class="ref-rs" href="https://rs.school/js/"><img class="img-rs" src="./assets/svg/rsschool.svg" alt="rs school"></a>
+      <div class="year">&copy;2021</div>
+      <a class="ref-githab" href="https://github.com/LenaStask"><img class="img-github" src="./assets/svg/github.svg" alt="github"></a>
+    </footer>
+  </div>  
 </body>
 </html>
