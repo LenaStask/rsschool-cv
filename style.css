@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+  background: #c4c4c4;
+  color: #505050;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0
+}
+
+.container {
+  width: 1024px;
+  background: #f6f6f6;
+  font-size: 18px;
+  box-shadow: 0 0 10px #505050;
+  margin: 20px auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.aside {
+  width: 32%;
+  background: #eec0c0;  
+}
+
+.aside header { 
+  padding: 60px 20px 20px 20px;
+  text-align: center;
+  background: #f6f6f6;  
+}
+
+.aside img {
+  margin: 10px;
+  border-radius: 50%;
+  justify-content: center;  
+}
+
+.aside h1 {
+  margin: 20px 0;
+  font-weight: 100;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.aside header h2 {
+  margin: 20px 0;
+  font-weight: lighter;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.location {
+  text-align: center;
+}
+
+.summary {
+  background: #eec0c0;  
+}
+
+.summary > section {
+  position: relative;
+  top: -20px;
+  padding: 0 20px;
+  margin: 40px 0;  
+}
+
+.summary h2 {
+  font-size: 22px;
+  padding: 5px 20px;
+  margin: 20px 0;
+  text-align: center;
+  background: #505050;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;  
+}
+
+.summary img {
+  vertical-align: middle;
+  margin: 10px 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.summary a {
+  color: #505050;
+  text-decoration: none;
+}
+
+.contact ul {
+  list-style: none; 
+}
+
+.skills li ,
+.languages li {
+  margin: 15px 20px;
+}
+
+.languages  span{
+  text-transform: uppercase;  
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 68%;
+  padding: 0 40px;
+}
+
+.main h3 {
+  font-size: 20px;
+  color: #777;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.main p {
+  color: #777;
+  line-height: 30px; 
+}
+
+.about p {
+  text-align: justify;
+}
+
+.main section {
+  margin: 50px 0;
+}
+
+.main > section > header {
+  display: flex;
+  margin: 20px 0;
+}
+
+.main h2 {
+  margin-left: 10px;
+  flex-grow: 1;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border-bottom: 2px solid #505050;
+}
+
+.main img {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+}
+.education-link {
+  color: #505050;
+  text-decoration: none;
+}
+
+.footer {
+  padding: 20px;
+  background: #505050;
+}
+
+.footer .year {
+  text-align: center;
+  color: #fff;
+  line-height: 35px;
+}
