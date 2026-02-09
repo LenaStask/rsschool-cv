@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>CV</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=1"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>tt</div>
+      <div>
+        <h1>Alena Staskevich</h1>
+        <p>Frontend Developer</p>
+        <h2>Contact information</h2>
+      </div>
+    </header>
+    <main>
+      <section id="summary">
+        <h2>About me</h2>
+        <p>
+          Frontend Developer with a strong academic foundation in Mathematics
+          and Computer Science, and hands-on experience building modern web
+          applications.
+        </p>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <p>
+          JavaScript | TypeScript | Next.js | React | Redux Toolkit | REST API |
+          Node.js | MongoDB | Git | ESLint | HTML5 | CSS3 | Less | Sass
+        </p>
+      </section>
+      <section id="code">
+        <h2>Code example</h2>
+        <pre>
+            <code>
+function mergeSort(array: number[]): number[] {
+  if (array.length &lt= 1) return array;
+
+  let mid = Math.floor(array.length / 2);
+  let left = array.slice(0, mid);
+  let right = array.slice(mid);
+
+  return merge(mergeSort(left), mergeSort(right));
+}
+
+function merge(left: number[], right: number[]): number[] {
+  let leftIndex = 0;
+  let rightIndex = 0;
+  const result = [];
+
+  while (leftIndex &lt left.length && rightIndex &lt right.length) {
+    if (left[leftIndex] &lt right[rightIndex]) {
+      result.push(left[leftIndex]);
+      leftIndex++;
+    } else {
+      result.push(right[rightIndex]);
+      rightIndex++;
+    }
+  }
+  return [...result, ...left.slice(leftIndex), ...right.slice(rightIndex)];
+}
+            </code>
+        </pre>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+      </section>
+      <section id="languages">
+        <h2>Languages</h2>
+        <ul>
+          <li>
+            <strong>English</strong>
+            B2
+          </li>
+          <li>
+            <strong>Polish</strong>
+            B1
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
