@@ -10,36 +10,141 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div>tt</div>
-      <div>
-        <h1>Alena Staskevich</h1>
-        <p>Frontend Developer</p>
-        <h2>Contact information</h2>
-      </div>
-    </header>
-    <main>
-      <section id="summary">
-        <h2>About me</h2>
-        <p>
-          Frontend Developer with a strong academic foundation in Mathematics
-          and Computer Science, and hands-on experience building modern web
-          applications.
-        </p>
-      </section>
-      <section id="skills">
-        <h2>Skills</h2>
-        <p>
-          JavaScript | TypeScript | Next.js | React | Redux Toolkit | REST API |
-          Node.js | MongoDB | Git | ESLint | HTML5 | CSS3 | Less | Sass
-        </p>
-      </section>
-      <section id="code">
-        <h2>Code example</h2>
-        <pre>
+    <div class="container">
+      <header>
+        <div>
+          <img
+            src="assets/cv-photo.png"
+            alt="My Profile Photo"
+            class="profile-img"
+            width="200"
+          />
+        </div>
+        <div>
+          <h1>Alena Staskevich</h1>
+          <p>Frontend Developer</p>
+          <section class="contact-information">
+            <h2>Contact information</h2>
+            <ul>
+              <li>
+                <img
+                  src="assets/location.png"
+                  alt="Location Icon"
+                  class="cantact-icon"
+                  width="30"
+                />
+                Warsaw, Poland
+              </li>
+              <li>
+                <a href="mailto:lenastaskevich@gmail.com">
+                  <img
+                    src="assets/email.png"
+                    alt="Email Icon"
+                    class="cantact-icon"
+                    width="30"
+                  />
+                  lenastaskevich@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/alena-staskevich/">
+                  <img
+                    src="assets/linkedin.png"
+                    alt="LinkedIn Icon"
+                    class="cantact-icon"
+                    width="30"
+                  />LinkedIn</a
+                >
+              </li>
+              <li>
+                <a class="ref-githab" href="https://github.com/LenaStask">
+                  <img
+                    src="assets/github.png"
+                    alt="GitHub Icon"
+                    class="cantact-icon"
+                    width="30"
+                  />Github</a
+                >
+              </li>
+            </ul>
+          </section>
+        </div>
+      </header>
+      <main>
+        <div class="left-column">
+          <section id="skills">
+            <h2>Skills</h2>
+            <div>
+              <span class="skill-element">JavaScript </span>
+              <span class="skill-element">TypeScript</span>
+              <span class="skill-element">Next.js</span>
+              <span class="skill-element">React</span>
+              <span class="skill-element">Redux Toolkit</span>
+              <span class="skill-element">REST API</span>
+              <span class="skill-element">Node.js</span>
+              <span class="skill-element">HTML5</span>
+              <span class="skill-element">CSS3 </span>
+              <span class="skill-element">Git</span>
+              <span class="skill-element">ESLint</span>
+            </div>
+          </section>
+          <section id="education">
+            <h2>Education</h2>
+            <h3>Mathematics and Computer Science</h3>
+            <p>BELARUSIAN STATE UNIVERSITY</p>
+            <br />
+            <a
+              class="education-link"
+              href="https://app.rs.school/certificate/ioqrtlps"
+              ><h3>React Course</h3></a
+            >
+            <p>The Rolling Scopes School</p>
+            <br />
+            <a
+              class="education-link"
+              href="https://app.rs.school/certificate/v2gvhss4"
+              ><h3>JavaScript/Front-end Course</h3></a
+            >
+            <p>The Rolling Scopes School</p>
+          </section>
+          <section id="languages">
+            <h2>Languages</h2>
+            <ul>
+              <li>
+                <strong>English</strong>
+                B2
+              </li>
+              <li>
+                <strong>Polish</strong>
+                B1
+              </li>
+              <li>
+                <strong>Russian</strong>
+                native
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="right-column">
+          <section id="summary">
+            <h2>About me</h2>
+            <p>
+              Frontend Developer with a strong academic foundation in
+              Mathematics and Computer Science, and hands-on experience building
+              modern web applications.
+            </p>
+          </section>
+          <section id="code">
+            <h2>Code example</h2>
+            <p>
+              <strong>Merge Sort</strong> is a "Divide and Conquer" algorithm
+              that recursively splits an array into halves, sorts them, and
+              merges them back together.
+            </p>
+            <pre>
             <code>
 function mergeSort(array: number[]): number[] {
-  if (array.length &lt= 1) return array;
+  if (array.length &lt;= 1) return array;
 
   let mid = Math.floor(array.length / 2);
   let left = array.slice(0, mid);
@@ -53,8 +158,8 @@ function merge(left: number[], right: number[]): number[] {
   let rightIndex = 0;
   const result = [];
 
-  while (leftIndex &lt left.length && rightIndex &lt right.length) {
-    if (left[leftIndex] &lt right[rightIndex]) {
+  while (leftIndex &lt; left.length && rightIndex &lt; right.length) {
+    if (left[leftIndex] &lt; right[rightIndex]) {
       result.push(left[leftIndex]);
       leftIndex++;
     } else {
@@ -66,27 +171,43 @@ function merge(left: number[], right: number[]): number[] {
 }
             </code>
         </pre>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-      </section>
-      <section id="education">
-        <h2>Education</h2>
-      </section>
-      <section id="languages">
-        <h2>Languages</h2>
-        <ul>
-          <li>
-            <strong>English</strong>
-            B2
-          </li>
-          <li>
-            <strong>Polish</strong>
-            B1
-          </li>
-        </ul>
-      </section>
-    </main>
+          </section>
+          <section id="projects">
+            <h2>Projects</h2>
+            <ol>
+              <li>
+                <div class="project-item">
+                  <h3>
+                    <a href="https://github.com/LenaStask/ArrowFlicks"
+                      >ArrowFlicks</a
+                    >
+                  </h3>
+                  <p>
+                    A user-friendly movie search engine that allows users to
+                    browse the latest films, search for specific titles, and
+                    view detailed information like ratings and summaries.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="project-item">
+                  <h3>
+                    <a href="https://github.com/LenaStask/job-search-app"
+                      >Job Search App</a
+                    >
+                  </h3>
+                  <p>
+                    A digital dashboard that helps users organize their job
+                    applications and track their progress from first contact to
+                    hire.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </section>
+        </div>
+      </main>
+    </div>
     <footer></footer>
   </body>
 </html>
