@@ -12,58 +12,79 @@
   <body>
     <div class="container">
       <header>
-        <div>
+        <div class="img-container">
           <img
             src="assets/cv-photo.png"
             alt="My Profile Photo"
             class="profile-img"
-            width="200"
           />
         </div>
         <div>
           <h1>Alena Staskevich</h1>
-          <p>Frontend Developer</p>
+          <h3>Frontend Developer</h3>
           <section class="contact-information">
-            <h2>Contact information</h2>
+            <h2 class="section-title">Contact me</h2>
             <ul>
               <li>
-                <img
-                  src="assets/location.png"
-                  alt="Location Icon"
-                  class="cantact-icon"
-                  width="30"
-                />
-                Warsaw, Poland
+                <a
+                  href="https://www.google.com/maps/place/Warsaw,+Poland/"
+                  class="contact-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="assets/location.png"
+                    alt="Location Icon"
+                    class="cantact-icon"
+                    width="30"
+                  />
+                  <span>Warsaw, Poland</span>
+                </a>
               </li>
               <li>
-                <a href="mailto:lenastaskevich@gmail.com">
+                <a
+                  href="mailto:lenastaskevich@gmail.com"
+                  class="contact-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     src="assets/email.png"
                     alt="Email Icon"
                     class="cantact-icon"
                     width="30"
                   />
-                  lenastaskevich@gmail.com</a
+                  <span>lenastaskevich@gmail.com</span></a
                 >
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/alena-staskevich/">
+                <a
+                  href="https://www.linkedin.com/in/alena-staskevich/"
+                  class="contact-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     src="assets/linkedin.png"
                     alt="LinkedIn Icon"
                     class="cantact-icon"
                     width="30"
-                  />LinkedIn</a
+                  /><span>LinkedIn</span></a
                 >
               </li>
               <li>
-                <a class="ref-githab" href="https://github.com/LenaStask">
+                <a
+                  href="https://github.com/LenaStask"
+                  class="contact-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     src="assets/github.png"
                     alt="GitHub Icon"
                     class="cantact-icon"
                     width="30"
-                  />Github</a
+                  /><span>Github</span></a
                 >
               </li>
             </ul>
@@ -73,29 +94,31 @@
       <main>
         <div class="left-column">
           <section id="skills">
-            <h2>Skills</h2>
-            <div>
-              <span class="skill-element">JavaScript </span>
-              <span class="skill-element">TypeScript</span>
-              <span class="skill-element">Next.js</span>
-              <span class="skill-element">React</span>
-              <span class="skill-element">Redux Toolkit</span>
-              <span class="skill-element">REST API</span>
-              <span class="skill-element">Node.js</span>
-              <span class="skill-element">HTML5</span>
-              <span class="skill-element">CSS3 </span>
-              <span class="skill-element">Git</span>
-              <span class="skill-element">ESLint</span>
-            </div>
+            <h2 class="section-title skills-title">Skills</h2>
+            <ul>
+              <li class="skill-element">JavaScript</li>
+              <li class="skill-element">TypeScript</li>
+              <li class="skill-element">Next.js</li>
+              <li class="skill-element">React</li>
+              <li class="skill-element">Redux Toolkit</li>
+              <li class="skill-element">REST API</li>
+              <li class="skill-element">Node.js</li>
+              <li class="skill-element">HTML5</li>
+              <li class="skill-element">CSS3</li>
+              <li class="skill-element">Git</li>
+              <li class="skill-element">ESLint</li>
+            </ul>
           </section>
           <section id="education">
-            <h2>Education</h2>
+            <h2 class="section-title education-title">Education</h2>
             <h3>Mathematics and Computer Science</h3>
             <p>BELARUSIAN STATE UNIVERSITY</p>
             <br />
             <a
               class="education-link"
               href="https://app.rs.school/certificate/ioqrtlps"
+              target="_blank"
+              rel="noopener noreferrer"
               ><h3>React Course</h3></a
             >
             <p>The Rolling Scopes School</p>
@@ -103,12 +126,14 @@
             <a
               class="education-link"
               href="https://app.rs.school/certificate/v2gvhss4"
+              target="_blank"
+              rel="noopener noreferrer"
               ><h3>JavaScript/Front-end Course</h3></a
             >
             <p>The Rolling Scopes School</p>
           </section>
           <section id="languages">
-            <h2>Languages</h2>
+            <h2 class="section-title languages-title">Languages</h2>
             <ul>
               <li>
                 <strong>English</strong>
@@ -127,7 +152,7 @@
         </div>
         <div class="right-column">
           <section id="summary">
-            <h2>About me</h2>
+            <h2 class="section-title summary-title">About me</h2>
             <p>
               Frontend Developer with a strong academic foundation in
               Mathematics and Computer Science, and hands-on experience building
@@ -135,7 +160,7 @@
             </p>
           </section>
           <section id="code">
-            <h2>Code example</h2>
+            <h2 class="section-title code-title">Code example</h2>
             <p>
               <strong>Merge Sort</strong> is a "Divide and Conquer" algorithm
               that recursively splits an array into halves, sorts them, and
@@ -173,12 +198,15 @@ function merge(left: number[], right: number[]): number[] {
         </pre>
           </section>
           <section id="projects">
-            <h2>Projects</h2>
+            <h2 class="section-title project-title">Projects</h2>
             <ol>
               <li>
                 <div class="project-item">
                   <h3>
-                    <a href="https://github.com/LenaStask/ArrowFlicks"
+                    <a
+                      href="https://github.com/LenaStask/ArrowFlicks"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       >ArrowFlicks</a
                     >
                   </h3>
@@ -192,7 +220,10 @@ function merge(left: number[], right: number[]): number[] {
               <li>
                 <div class="project-item">
                   <h3>
-                    <a href="https://github.com/LenaStask/job-search-app"
+                    <a
+                      href="https://github.com/LenaStask/job-search-app"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       >Job Search App</a
                     >
                   </h3>
