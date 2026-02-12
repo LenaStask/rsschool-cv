@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fdfaf3;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: #e5613e;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-container {
+  width: 40%;
+}
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid #f5c2da;
+}
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact-icon {
+  color: #f5c2da;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.section-title {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px; /* Makes the capsule shape */
+  border: 2px solid #000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.skills-title {
+  background-color: #edfc97;
+}
+.education-title {
+  background-color: #a8a2d1;
+}
+.code-title {
+  background-color: #8ce8a5;
+}
+.summary-title {
+  background-color: #f5c2da;
+}
+.project-title {
+  background-color: #edfc97;
+}
+.skill-element {
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 5px 5px 5px 0;
+  border-radius: 50px; /* Makes the capsule shape */
+  border: 1px solid #000;
+}
+.left-column {
+  flex: 0 0 40%;
+}
+.right-column {
+  flex: 1;
+}
