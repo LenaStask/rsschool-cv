@@ -1,13 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Inter", sans-serif;
 }
 .container {
   display: flex;
   flex-direction: column;
-
   max-width: 1000px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 0 20px;
   background-color: #fdfaf3;
 }
 a {
@@ -22,7 +24,22 @@ ul {
   margin: 0;
   padding: 0;
 }
-header {
+.header-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  background-color: #fdfaf3;
+  backdrop-filter: blur(5px);
+  font-weight: 600;
+}
+.header-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.header-profile {
   display: flex;
   flex-wrap: wrap;
 }
@@ -53,7 +70,7 @@ main {
 .section-title {
   display: inline-block;
   padding: 10px 30px;
-  border-radius: 50px; /* Makes the capsule shape */
+  border-radius: 50px;
   border: 2px solid #000;
   font-weight: bold;
   text-transform: uppercase;
