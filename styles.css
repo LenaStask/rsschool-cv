@@ -103,3 +103,21 @@ main {
 .right-column {
   flex: 1;
 }
+footer {
+  border-top: 1px solid #a8a2d1;
+  margin-top: 30px;
+}
+.footer-content {
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+}
+.footer-icon {
+  width: 100px;
+}
+a:hover .footer-icon {
+  fill: #e5613e;
+}
