@@ -121,3 +121,16 @@ footer {
 a:hover .footer-icon {
   fill: #e5613e;
 }
+pre[class*="language-"] {
+  border-radius: 8px;
+  padding: 0.8em 1em;
+  margin: 0.5em 0;
+  width: fit-content;
+  max-width: 100%;
+}
+code[class*="language-"] {
+  font-family: monospace !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  letter-spacing: -0.02em;
+}
