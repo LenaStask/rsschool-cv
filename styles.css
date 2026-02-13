@@ -52,7 +52,7 @@ ul {
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
-  border: 3px solid #f5c2da;
+  border: 10px solid #f5c2da;
 }
 .contact-link {
   display: inline-flex;
@@ -75,6 +75,7 @@ main {
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .skills-title {
   background-color: #edfc97;
 }
@@ -90,12 +91,18 @@ main {
 .project-title {
   background-color: #edfc97;
 }
+.languages-title {
+  background-color: #f5c2da;
+}
 .skill-element {
   display: inline-block;
   padding: 5px 20px;
   margin: 5px 5px 5px 0;
   border-radius: 50px; /* Makes the capsule shape */
   border: 1px solid #000;
+}
+.languages-list li {
+  margin-bottom: 10px;
 }
 .left-column {
   flex: 0 0 40%;
