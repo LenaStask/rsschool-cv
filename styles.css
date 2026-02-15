@@ -25,7 +25,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-.header-nav {
+.menu {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -35,44 +35,42 @@ ul {
   backdrop-filter: blur(5px);
   font-weight: 600;
 }
-.header-nav ul {
+.menu ul {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-.header-nav .menu-icon {
+.menu .menu-btn {
   display: none;
 }
-.header-nav .menu-btn {
-  display: none;
-}
-@media (max-width: 48em) {
-  .header-nav ul {
+@media (max-width: 600px) {
+  .left-column {
+    flex: 0 0 100% !;
+  }
+  .menu ul {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
     list-style: none;
     overflow: hidden;
-  }
-  .header-nav li a {
-    display: block;
-    text-decoration: none;
-  }
-  .header-nav .menu {
     clear: both;
     max-height: 0;
     transition: max-height 0.2s ease-out;
   }
-  .header-nav .menu-icon {
+  .menu li a {
+    display: block;
+    text-decoration: none;
+  }
+  .menu .menu-btn {
     cursor: pointer;
-    display: inline-block;
+    display: block;
     float: right;
     padding: 28px 20px;
     position: relative;
     user-select: none;
   }
-  .header-nav .menu-icon .navicon {
+  .menu .menu-btn-icon {
     background: #333;
     display: block;
     height: 2px;
@@ -80,8 +78,8 @@ ul {
     transition: background 0.2s ease-out;
     width: 18px;
   }
-  .header-nav .menu-icon .navicon::before,
-  .header-nav .menu-icon .navicon::after {
+  .menu .menu-btn-icon::before,
+  .menu .menu-btn-icon::after {
     background: #333;
     content: "";
     display: block;
@@ -90,30 +88,25 @@ ul {
     transition: all 0.2s ease-out;
     width: 100%;
   }
-  .header-nav .menu-icon .navicon::before {
+  .menu .menu-btn-icon::before {
     top: 5px;
   }
-  .header-nav .menu-icon .navicon::after {
+  .menu .menu-btn-icon::after {
     top: -5px;
   }
-  .header-nav .menu-btn {
-    display: none;
-  }
-  .header-nav .menu-btn:checked ~ .menu {
+  .menu.open ul {
     max-height: 240px;
   }
-  .header-nav .menu-btn:checked ~ .menu-icon .navicon {
+  .menu.open .menu-btn-icon {
     background: transparent;
   }
-  .header-nav .menu-btn:checked ~ .menu-icon .navicon::before {
+  .menu.open .menu-btn-icon::before {
+    top: 0;
     transform: rotate(-45deg);
   }
-  .header-nav .menu-btn:checked ~ .menu-icon .navicon::after {
-    transform: rotate(45deg);
-  }
-  .header-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .header-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  .menu.open .menu-btn-icon::after {
     top: 0;
+    transform: rotate(45deg);
   }
 }
 .header-profile {
@@ -121,6 +114,7 @@ ul {
   flex-wrap: wrap;
 }
 .img-container {
+  min-width: 290px;
   width: 40%;
 }
 .profile-img {
@@ -210,7 +204,6 @@ pre[class*="language-"] {
   padding: 0.8em 1em;
   margin: 0.5em 0;
   width: fit-content;
-  max-width: 100%;
 }
 code[class*="language-"] {
   font-family: monospace !important;
