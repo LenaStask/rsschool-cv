@@ -21,12 +21,11 @@
   </head>
   <body>
     <div class="container">
-      <nav class="header-nav">
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"
-          ><span class="navicon"></span
-        ></label>
-        <ul class="menu">
+      <nav class="menu">
+        <div class="menu-btn">
+          <span class="menu-btn-icon"></span>
+        </div>
+        <ul>
           <li><a href="#summary">About</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -304,5 +303,26 @@ function merge(left: number[], right: number[]): number[] {
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const menu = document.querySelector(".menu");
+
+      menuBtn.addEventListener("click", (event) => {
+        menu.classList.toggle("open");
+      });
+
+      // Close menu when a menu link is clicked
+      menu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.remove("open");
+        });
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!menuBtn.contains(event.target) && !menu.contains(event.target)) {
+          menu.classList.remove("open");
+        }
+      });
+    </script>
   </body>
 </html>
