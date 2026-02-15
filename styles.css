@@ -1,0 +1,220 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fdfaf3;
+  font-family: "Inter", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #fdfaf3;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: #e5613e;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.header-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  background-color: #fdfaf3;
+  backdrop-filter: blur(5px);
+  font-weight: 600;
+}
+.header-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.header-nav .menu-icon {
+  display: none;
+}
+.header-nav .menu-btn {
+  display: none;
+}
+@media (max-width: 48em) {
+  .header-nav ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+  .header-nav li a {
+    display: block;
+    text-decoration: none;
+  }
+  .header-nav .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+  .header-nav .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  .header-nav .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+  .header-nav .menu-icon .navicon::before,
+  .header-nav .menu-icon .navicon::after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  .header-nav .menu-icon .navicon::before {
+    top: 5px;
+  }
+  .header-nav .menu-icon .navicon::after {
+    top: -5px;
+  }
+  .header-nav .menu-btn {
+    display: none;
+  }
+  .header-nav .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  .header-nav .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  .header-nav .menu-btn:checked ~ .menu-icon .navicon::before {
+    transform: rotate(-45deg);
+  }
+  .header-nav .menu-btn:checked ~ .menu-icon .navicon::after {
+    transform: rotate(45deg);
+  }
+  .header-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+}
+.header-profile {
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-container {
+  width: 40%;
+}
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 10px solid #f5c2da;
+}
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact-icon {
+  color: #f5c2da;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.section-title {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 2px solid #000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.skills-title {
+  background-color: #edfc97;
+}
+.education-title {
+  background-color: #a8a2d1;
+}
+.code-title {
+  background-color: #8ce8a5;
+}
+.summary-title {
+  background-color: #f5c2da;
+}
+.project-title {
+  background-color: #edfc97;
+}
+.languages-title {
+  background-color: #f5c2da;
+}
+.skill-element {
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 5px 5px 5px 0;
+  border-radius: 50px; /* Makes the capsule shape */
+  border: 1px solid #000;
+}
+.languages-list li {
+  margin-bottom: 10px;
+}
+.left-column {
+  flex: 0 0 40%;
+}
+.right-column {
+  flex: 1;
+}
+footer {
+  border-top: 1px solid #a8a2d1;
+  margin-top: 30px;
+}
+.footer-content {
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+}
+.footer-icon {
+  width: 100px;
+}
+a:hover .footer-icon {
+  fill: #e5613e;
+}
+pre[class*="language-"] {
+  border-radius: 8px;
+  padding: 0.8em 1em;
+  margin: 0.5em 0;
+  width: fit-content;
+  max-width: 100%;
+}
+code[class*="language-"] {
+  font-family: monospace !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  letter-spacing: -0.02em;
+}
